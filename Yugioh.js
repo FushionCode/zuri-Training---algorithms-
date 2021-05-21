@@ -1,4 +1,5 @@
 function checkYuGiOh(n) {
+    let checkedDivisibles;
     if(!Number(n)){
         let result = JSON.stringify(n);
         return `invalid parameter: "${result}"`;
@@ -44,8 +45,10 @@ function checkYuGiOh(n) {
             }
         
         };
-    return checkDivisible;
+        return checkDivisible;
     };
+    checkedDivisibles = checkDivisible;
+    return checkedDivisibles;
 }
 
 console.log(checkYuGiOh('5'));
